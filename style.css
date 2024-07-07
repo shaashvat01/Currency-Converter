@@ -65,6 +65,7 @@ form input:focus {
     font-size: 1.5rem;
     color: #007BFF;
     margin: 0 1rem;
+    margin-top: 1.4rem;
 }
 
 .select-container {
