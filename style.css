@@ -1,22 +1,33 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
 }
 
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: aqua;
+    background-color: #f0f2f5;
+    color: #333;
 }
 
-.container{
-    background-color: white;
+.container {
+    background-color: #fff;
     padding: 2rem;
     border-radius: 1rem;
-    min-height: 45vh;
-    width: 40vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    color: #007BFF;
 }
 
 form{
@@ -28,14 +39,20 @@ form select, button, input{
     border: none;
     outline: none;
     border-radius: 0.75rem;
+    padding: 0.75rem;
+    font-size: 1rem;
 }
 
-form input{
-    border: 1px solid lightgrey;
-    font-size: 1rem;
-    height: 3rem;
-    padding-left: 0.5rem;
+form input {
+    border: 1px solid #ccc;
+    padding-left: 1rem;
+    transition: border-color 0.3s;
 }
+
+form input:focus {
+    border-color: #007BFF;
+}
+
 
 .dropdown{
     display: flex;
@@ -44,37 +61,51 @@ form input{
     margin-top: 2rem;
 }
 
-.dropdown i{
+.dropdown i {
     font-size: 1.5rem;
-    margin-top: 1rem;
+    color: #007BFF;
+    margin: 0 1rem;
 }
 
-.select-container img{
-    max-width: 2rem;
-}
-
-.select-container{
+.select-container {
     display: flex;
-    justify-content: center;
     align-items: center;
+    border: 1px solid #ccc;
     border-radius: 0.5rem;
-    border: 1px solid lightgrey;
-    width: 6rem;
+    padding: 0.5rem;
+    transition: border-color 0.3s;
 }
 
-.select-container select{
+.select-container img {
+    max-width: 2.25rem;
+    margin-right: 0.5rem;
+}
+
+.select-container select {
+    border: none;
+    outline: none;
     font-size: 1rem;
+    padding: 0.5rem;
     width: auto;
+    background: transparent;
 }
 
-.msg{
-    margin: 2rem 0 2rem 0;
+.msg {
+    margin: 2rem 0;
+    font-size: 1rem;
+    color: #333;
 }
 
-form button{
+form button {
     height: 3rem;
-    background-color: beige;
-    color: balck;
+    background-color: #007BFF;
+    color: white;
     font-size: 1rem;
     cursor: pointer;
+    transition: background-color 0.3s;
+    border: none;
+}
+
+form button:hover {
+    background-color: #0056b3;
 }
